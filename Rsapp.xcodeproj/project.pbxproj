@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF13FA8E20F6F1270096D0EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13FA8D20F6F1270096D0EA /* AppDelegate.swift */; };
+		DF13FA9020F6F1270096D0EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13FA8F20F6F1270096D0EA /* ViewController.swift */; };
+		DF13FA9320F6F1270096D0EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF13FA9120F6F1270096D0EA /* Main.storyboard */; };
+		DF13FA9520F6F1290096D0EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF13FA9420F6F1290096D0EA /* Assets.xcassets */; };
+		DF13FA9820F6F1290096D0EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF13FA9620F6F1290096D0EA /* LaunchScreen.storyboard */; };
+		DF13FAA320F6F1290096D0EA /* RsappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13FAA220F6F1290096D0EA /* RsappTests.swift */; };
+		DF13FAAE20F6F1290096D0EA /* RsappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13FAAD20F6F1290096D0EA /* RsappUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF13FA9F20F6F1290096D0EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF13FA8220F6F1270096D0EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF13FA8920F6F1270096D0EA;
+			remoteInfo = Rsapp;
+		};
+		DF13FAAA20F6F1290096D0EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF13FA8220F6F1270096D0EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF13FA8920F6F1270096D0EA;
+			remoteInfo = Rsapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF13FA8A20F6F1270096D0EA /* Rsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF13FA8D20F6F1270096D0EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF13FA8F20F6F1270096D0EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF13FA9220F6F1270096D0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF13FA9420F6F1290096D0EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF13FA9720F6F1290096D0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF13FA9920F6F1290096D0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF13FA9E20F6F1290096D0EA /* RsappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RsappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF13FAA220F6F1290096D0EA /* RsappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RsappTests.swift; sourceTree = "<group>"; };
+		DF13FAA420F6F1290096D0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF13FAA920F6F1290096D0EA /* RsappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RsappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF13FAAD20F6F1290096D0EA /* RsappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RsappUITests.swift; sourceTree = "<group>"; };
+		DF13FAAF20F6F1290096D0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF13FA8720F6F1270096D0EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF13FA9B20F6F1290096D0EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF13FAA620F6F1290096D0EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF13FA8120F6F1270096D0EA = {
+			isa = PBXGroup;
+			children = (
+				DF13FA8C20F6F1270096D0EA /* Rsapp */,
+				DF13FAA120F6F1290096D0EA /* RsappTests */,
+				DF13FAAC20F6F1290096D0EA /* RsappUITests */,
+				DF13FA8B20F6F1270096D0EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF13FA8B20F6F1270096D0EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF13FA8A20F6F1270096D0EA /* Rsapp.app */,
+				DF13FA9E20F6F1290096D0EA /* RsappTests.xctest */,
+				DF13FAA920F6F1290096D0EA /* RsappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF13FA8C20F6F1270096D0EA /* Rsapp */ = {
+			isa = PBXGroup;
+			children = (
+				DF13FA8D20F6F1270096D0EA /* AppDelegate.swift */,
+				DF13FA8F20F6F1270096D0EA /* ViewController.swift */,
+				DF13FA9120F6F1270096D0EA /* Main.storyboard */,
+				DF13FA9420F6F1290096D0EA /* Assets.xcassets */,
+				DF13FA9620F6F1290096D0EA /* LaunchScreen.storyboard */,
+				DF13FA9920F6F1290096D0EA /* Info.plist */,
+			);
+			path = Rsapp;
+			sourceTree = "<group>";
+		};
+		DF13FAA120F6F1290096D0EA /* RsappTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF13FAA220F6F1290096D0EA /* RsappTests.swift */,
+				DF13FAA420F6F1290096D0EA /* Info.plist */,
+			);
+			path = RsappTests;
+			sourceTree = "<group>";
+		};
+		DF13FAAC20F6F1290096D0EA /* RsappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF13FAAD20F6F1290096D0EA /* RsappUITests.swift */,
+				DF13FAAF20F6F1290096D0EA /* Info.plist */,
+			);
+			path = RsappUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF13FA8920F6F1270096D0EA /* Rsapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF13FAB220F6F1290096D0EA /* Build configuration list for PBXNativeTarget "Rsapp" */;
+			buildPhases = (
+				DF13FA8620F6F1270096D0EA /* Sources */,
+				DF13FA8720F6F1270096D0EA /* Frameworks */,
+				DF13FA8820F6F1270096D0EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rsapp;
+			productName = Rsapp;
+			productReference = DF13FA8A20F6F1270096D0EA /* Rsapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF13FA9D20F6F1290096D0EA /* RsappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF13FAB520F6F1290096D0EA /* Build configuration list for PBXNativeTarget "RsappTests" */;
+			buildPhases = (
+				DF13FA9A20F6F1290096D0EA /* Sources */,
+				DF13FA9B20F6F1290096D0EA /* Frameworks */,
+				DF13FA9C20F6F1290096D0EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF13FAA020F6F1290096D0EA /* PBXTargetDependency */,
+			);
+			name = RsappTests;
+			productName = RsappTests;
+			productReference = DF13FA9E20F6F1290096D0EA /* RsappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF13FAA820F6F1290096D0EA /* RsappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF13FAB820F6F1290096D0EA /* Build configuration list for PBXNativeTarget "RsappUITests" */;
+			buildPhases = (
+				DF13FAA520F6F1290096D0EA /* Sources */,
+				DF13FAA620F6F1290096D0EA /* Frameworks */,
+				DF13FAA720F6F1290096D0EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF13FAAB20F6F1290096D0EA /* PBXTargetDependency */,
+			);
+			name = RsappUITests;
+			productName = RsappUITests;
+			productReference = DF13FAA920F6F1290096D0EA /* RsappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF13FA8220F6F1270096D0EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Guest03;
+				TargetAttributes = {
+					DF13FA8920F6F1270096D0EA = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DF13FA9D20F6F1290096D0EA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DF13FA8920F6F1270096D0EA;
+					};
+					DF13FAA820F6F1290096D0EA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DF13FA8920F6F1270096D0EA;
+					};
+				};
+			};
+			buildConfigurationList = DF13FA8520F6F1270096D0EA /* Build configuration list for PBXProject "Rsapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF13FA8120F6F1270096D0EA;
+			productRefGroup = DF13FA8B20F6F1270096D0EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF13FA8920F6F1270096D0EA /* Rsapp */,
+				DF13FA9D20F6F1290096D0EA /* RsappTests */,
+				DF13FAA820F6F1290096D0EA /* RsappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF13FA8820F6F1270096D0EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF13FA9820F6F1290096D0EA /* LaunchScreen.storyboard in Resources */,
+				DF13FA9520F6F1290096D0EA /* Assets.xcassets in Resources */,
+				DF13FA9320F6F1270096D0EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF13FA9C20F6F1290096D0EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF13FAA720F6F1290096D0EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF13FA8620F6F1270096D0EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF13FA9020F6F1270096D0EA /* ViewController.swift in Sources */,
+				DF13FA8E20F6F1270096D0EA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF13FA9A20F6F1290096D0EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF13FAA320F6F1290096D0EA /* RsappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF13FAA520F6F1290096D0EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF13FAAE20F6F1290096D0EA /* RsappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF13FAA020F6F1290096D0EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF13FA8920F6F1270096D0EA /* Rsapp */;
+			targetProxy = DF13FA9F20F6F1290096D0EA /* PBXContainerItemProxy */;
+		};
+		DF13FAAB20F6F1290096D0EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF13FA8920F6F1270096D0EA /* Rsapp */;
+			targetProxy = DF13FAAA20F6F1290096D0EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF13FA9120F6F1270096D0EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF13FA9220F6F1270096D0EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF13FA9620F6F1290096D0EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF13FA9720F6F1290096D0EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF13FAB020F6F1290096D0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF13FAB120F6F1290096D0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF13FAB320F6F1290096D0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9Q9GN4LV2;
+				INFOPLIST_FILE = Rsapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezke.Rsapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF13FAB420F6F1290096D0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9Q9GN4LV2;
+				INFOPLIST_FILE = Rsapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezke.Rsapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF13FAB620F6F1290096D0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9Q9GN4LV2;
+				INFOPLIST_FILE = RsappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezke.RsappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rsapp.app/Rsapp";
+			};
+			name = Debug;
+		};
+		DF13FAB720F6F1290096D0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9Q9GN4LV2;
+				INFOPLIST_FILE = RsappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezke.RsappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rsapp.app/Rsapp";
+			};
+			name = Release;
+		};
+		DF13FAB920F6F1290096D0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9Q9GN4LV2;
+				INFOPLIST_FILE = RsappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezke.RsappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rsapp;
+			};
+			name = Debug;
+		};
+		DF13FABA20F6F1290096D0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9Q9GN4LV2;
+				INFOPLIST_FILE = RsappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezke.RsappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rsapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF13FA8520F6F1270096D0EA /* Build configuration list for PBXProject "Rsapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF13FAB020F6F1290096D0EA /* Debug */,
+				DF13FAB120F6F1290096D0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF13FAB220F6F1290096D0EA /* Build configuration list for PBXNativeTarget "Rsapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF13FAB320F6F1290096D0EA /* Debug */,
+				DF13FAB420F6F1290096D0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF13FAB520F6F1290096D0EA /* Build configuration list for PBXNativeTarget "RsappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF13FAB620F6F1290096D0EA /* Debug */,
+				DF13FAB720F6F1290096D0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF13FAB820F6F1290096D0EA /* Build configuration list for PBXNativeTarget "RsappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF13FAB920F6F1290096D0EA /* Debug */,
+				DF13FABA20F6F1290096D0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF13FA8220F6F1270096D0EA /* Project object */;
+}
