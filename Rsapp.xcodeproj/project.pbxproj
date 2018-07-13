@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521CFC0BFD17838A7CCF5638 /* Pods_Rsapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0721CE10C27CB37C6B9BAB6 /* Pods_Rsapp.framework */; };
+		AC397143B3A474BA79116474 /* Pods_RsappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7A411E07AD93B098008B31 /* Pods_RsappUITests.framework */; };
+		D14BBF99BF4DC23236ABD6CD /* Pods_RsappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884CE85E0ECFAEEFF525BE30 /* Pods_RsappTests.framework */; };
 		DF13FA8E20F6F1270096D0EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13FA8D20F6F1270096D0EA /* AppDelegate.swift */; };
-		DF13FA9020F6F1270096D0EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13FA8F20F6F1270096D0EA /* ViewController.swift */; };
-		DF13FA9320F6F1270096D0EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF13FA9120F6F1270096D0EA /* Main.storyboard */; };
 		DF13FA9520F6F1290096D0EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF13FA9420F6F1290096D0EA /* Assets.xcassets */; };
 		DF13FA9820F6F1290096D0EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF13FA9620F6F1290096D0EA /* LaunchScreen.storyboard */; };
 		DF13FAA320F6F1290096D0EA /* RsappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13FAA220F6F1290096D0EA /* RsappTests.swift */; };
 		DF13FAAE20F6F1290096D0EA /* RsappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13FAAD20F6F1290096D0EA /* RsappUITests.swift */; };
+		DF13FABC20F6F5800096D0EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF13FABB20F6F5800096D0EA /* GoogleService-Info.plist */; };
+		DF2B553D20F8399400252B47 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B553C20F8399400252B47 /* Constants.swift */; };
+		DF2B554120F8424A00252B47 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B554020F8424A00252B47 /* RegisterViewController.swift */; };
+		DF2B554320F84E0A00252B47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2B554220F84E0A00252B47 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +39,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041D8A72345F8FAE84DB35E5 /* Pods-RsappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RsappUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RsappUITests/Pods-RsappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		15F257AEC2713370B56CE60D /* Pods-Rsapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rsapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rsapp/Pods-Rsapp.debug.xcconfig"; sourceTree = "<group>"; };
+		61D3C3D5BE904C39051184DF /* Pods-Rsapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rsapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rsapp/Pods-Rsapp.release.xcconfig"; sourceTree = "<group>"; };
+		748608E92B97CCE448537549 /* Pods-RsappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RsappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RsappTests/Pods-RsappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		884CE85E0ECFAEEFF525BE30 /* Pods_RsappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RsappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0721CE10C27CB37C6B9BAB6 /* Pods_Rsapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rsapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3B64DCBF4F1201C47660A8 /* Pods-RsappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RsappTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RsappTests/Pods-RsappTests.release.xcconfig"; sourceTree = "<group>"; };
+		D46ECF6EEA985263F8C808DE /* Pods-RsappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RsappUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RsappUITests/Pods-RsappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE7A411E07AD93B098008B31 /* Pods_RsappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RsappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13FA8A20F6F1270096D0EA /* Rsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13FA8D20F6F1270096D0EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF13FA8F20F6F1270096D0EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DF13FA9220F6F1270096D0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF13FA9420F6F1290096D0EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF13FA9720F6F1290096D0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF13FA9920F6F1290096D0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +59,12 @@
 		DF13FAA920F6F1290096D0EA /* RsappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RsappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13FAAD20F6F1290096D0EA /* RsappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RsappUITests.swift; sourceTree = "<group>"; };
 		DF13FAAF20F6F1290096D0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF13FABB20F6F5800096D0EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DF13FABD20F700D60096D0EA /* Rsapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rsapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		DF2B553C20F8399400252B47 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DF2B554020F8424A00252B47 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		DF2B554220F84E0A00252B47 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DF2B554420F85E3500252B47 /* Rsapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rsapp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521CFC0BFD17838A7CCF5638 /* Pods_Rsapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14BBF99BF4DC23236ABD6CD /* Pods_RsappTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC397143B3A474BA79116474 /* Pods_RsappUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65D87716067E0ED85E53BCF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0721CE10C27CB37C6B9BAB6 /* Pods_Rsapp.framework */,
+				884CE85E0ECFAEEFF525BE30 /* Pods_RsappTests.framework */,
+				DE7A411E07AD93B098008B31 /* Pods_RsappUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B63527E534C95B928CD62DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15F257AEC2713370B56CE60D /* Pods-Rsapp.debug.xcconfig */,
+				61D3C3D5BE904C39051184DF /* Pods-Rsapp.release.xcconfig */,
+				748608E92B97CCE448537549 /* Pods-RsappTests.debug.xcconfig */,
+				BE3B64DCBF4F1201C47660A8 /* Pods-RsappTests.release.xcconfig */,
+				D46ECF6EEA985263F8C808DE /* Pods-RsappUITests.debug.xcconfig */,
+				041D8A72345F8FAE84DB35E5 /* Pods-RsappUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DF13FA8120F6F1270096D0EA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +125,8 @@
 				DF13FAA120F6F1290096D0EA /* RsappTests */,
 				DF13FAAC20F6F1290096D0EA /* RsappUITests */,
 				DF13FA8B20F6F1270096D0EA /* Products */,
+				6B63527E534C95B928CD62DF /* Pods */,
+				65D87716067E0ED85E53BCF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +143,16 @@
 		DF13FA8C20F6F1270096D0EA /* Rsapp */ = {
 			isa = PBXGroup;
 			children = (
+				DF2B554420F85E3500252B47 /* Rsapp.entitlements */,
+				DF2B554220F84E0A00252B47 /* Main.storyboard */,
 				DF13FA8D20F6F1270096D0EA /* AppDelegate.swift */,
-				DF13FA8F20F6F1270096D0EA /* ViewController.swift */,
-				DF13FA9120F6F1270096D0EA /* Main.storyboard */,
+				DF2B554020F8424A00252B47 /* RegisterViewController.swift */,
+				DF2B553C20F8399400252B47 /* Constants.swift */,
 				DF13FA9420F6F1290096D0EA /* Assets.xcassets */,
 				DF13FA9620F6F1290096D0EA /* LaunchScreen.storyboard */,
 				DF13FA9920F6F1290096D0EA /* Info.plist */,
+				DF13FABB20F6F5800096D0EA /* GoogleService-Info.plist */,
+				DF13FABD20F700D60096D0EA /* Rsapp-Bridging-Header.h */,
 			);
 			path = Rsapp;
 			sourceTree = "<group>";
@@ -132,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF13FAB220F6F1290096D0EA /* Build configuration list for PBXNativeTarget "Rsapp" */;
 			buildPhases = (
+				069909C2A7532E0CB45AE625 /* [CP] Check Pods Manifest.lock */,
 				DF13FA8620F6F1270096D0EA /* Sources */,
 				DF13FA8720F6F1270096D0EA /* Frameworks */,
 				DF13FA8820F6F1270096D0EA /* Resources */,
+				7A9FA856ECADD71A3D28B8F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +201,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF13FAB520F6F1290096D0EA /* Build configuration list for PBXNativeTarget "RsappTests" */;
 			buildPhases = (
+				EDBFFF64F7E37A01365D4183 /* [CP] Check Pods Manifest.lock */,
 				DF13FA9A20F6F1290096D0EA /* Sources */,
 				DF13FA9B20F6F1290096D0EA /* Frameworks */,
 				DF13FA9C20F6F1290096D0EA /* Resources */,
@@ -167,6 +220,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF13FAB820F6F1290096D0EA /* Build configuration list for PBXNativeTarget "RsappUITests" */;
 			buildPhases = (
+				AD6617B8494F1D2A1A699E99 /* [CP] Check Pods Manifest.lock */,
 				DF13FAA520F6F1290096D0EA /* Sources */,
 				DF13FAA620F6F1290096D0EA /* Frameworks */,
 				DF13FAA720F6F1290096D0EA /* Resources */,
@@ -193,6 +247,12 @@
 				TargetAttributes = {
 					DF13FA8920F6F1270096D0EA = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					DF13FA9D20F6F1290096D0EA = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -230,8 +290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF13FA9820F6F1290096D0EA /* LaunchScreen.storyboard in Resources */,
+				DF2B554320F84E0A00252B47 /* Main.storyboard in Resources */,
 				DF13FA9520F6F1290096D0EA /* Assets.xcassets in Resources */,
-				DF13FA9320F6F1270096D0EA /* Main.storyboard in Resources */,
+				DF13FABC20F6F5800096D0EA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +312,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		069909C2A7532E0CB45AE625 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rsapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A9FA856ECADD71A3D28B8F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Rsapp/Pods-Rsapp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rsapp/Pods-Rsapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD6617B8494F1D2A1A699E99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RsappUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDBFFF64F7E37A01365D4183 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RsappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DF13FA8620F6F1270096D0EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF13FA9020F6F1270096D0EA /* ViewController.swift in Sources */,
+				DF2B554120F8424A00252B47 /* RegisterViewController.swift in Sources */,
 				DF13FA8E20F6F1270096D0EA /* AppDelegate.swift in Sources */,
+				DF2B553D20F8399400252B47 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +440,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DF13FA9120F6F1270096D0EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF13FA9220F6F1270096D0EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DF13FA9620F6F1290096D0EA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -428,8 +567,10 @@
 		};
 		DF13FAB320F6F1290096D0EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F257AEC2713370B56CE60D /* Pods-Rsapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9Q9GN4LV2;
 				INFOPLIST_FILE = Rsapp/Info.plist;
@@ -439,6 +580,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezke.Rsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Rsapp/Rsapp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,8 +589,10 @@
 		};
 		DF13FAB420F6F1290096D0EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61D3C3D5BE904C39051184DF /* Pods-Rsapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9Q9GN4LV2;
 				INFOPLIST_FILE = Rsapp/Info.plist;
@@ -457,6 +602,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezke.Rsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Rsapp/Rsapp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,6 +610,7 @@
 		};
 		DF13FAB620F6F1290096D0EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 748608E92B97CCE448537549 /* Pods-RsappTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +632,7 @@
 		};
 		DF13FAB720F6F1290096D0EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3B64DCBF4F1201C47660A8 /* Pods-RsappTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +654,7 @@
 		};
 		DF13FAB920F6F1290096D0EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D46ECF6EEA985263F8C808DE /* Pods-RsappUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +675,7 @@
 		};
 		DF13FABA20F6F1290096D0EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 041D8A72345F8FAE84DB35E5 /* Pods-RsappUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

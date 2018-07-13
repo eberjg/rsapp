@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import Firebase
+import OneSignal
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    let APP_ID = "7771841A-1875-9C7F-FF07-379F72835300"
+    let API_KEY = "A9A35779-6B5C-F851-FFC4-B739FDDCEE00"
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        backendless!.initApp(APP_ID, apiKey: API_KEY)
+        OneSignal.initWithLaunchOptions(launchOptions, appId: kONESIGNALAPPID, handleNotificationReceived: nil, handleNotificationAction: nil, settings: nil)
+        
         return true
     }
 
