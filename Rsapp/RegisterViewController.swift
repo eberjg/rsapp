@@ -9,27 +9,50 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
-
+    
+    //phone registration
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var codeTextField: UITextField!
+    //@IBOutlet weak var requestButtonOutlet: UIButton!
+    
+    @IBOutlet weak var requestButtonOutlet: UIButton!
+    //Email registration
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
-
+    @IBAction func registerButtonPressed(_ sender: Any) {
+    }
+    
+    @IBAction func closedButtonPressed(_ sender: Any) {
+        
+        let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainVC")as! UITabBarController
+        self.present(mainView, animated: true, completion:nil)
+    }
+    @IBAction func requestButtonPressed(_ sender: Any) {
+    }
+    
+    
+    
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

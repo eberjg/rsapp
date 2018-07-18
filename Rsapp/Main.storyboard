@@ -10,6 +10,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Item-->
+        <scene sceneID="dmY-cL-dYw">
+            <objects>
+                <viewController id="pbs-RB-Acc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TV1-HS-Oy0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.1997319665" green="0.89536440139999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="jvP-SA-7O1"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="347-nT-guC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vqg-5h-Jlh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="41"/>
+        </scene>
         <!--Register View Controller-->
         <scene sceneID="t5u-cV-3X2">
             <objects>
@@ -50,6 +66,9 @@
                                         <state key="normal" title="Request Code">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="requestButtonPressed:" destination="hmp-hd-iSU" eventType="touchUpInside" id="Pr1-wJ-Evv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -61,6 +80,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" backgroundImage="ic_signup_close"/>
+                                <connections>
+                                    <action selector="closedButtonPressed:" destination="hmp-hd-iSU" eventType="touchUpInside" id="EYS-gr-zuY"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UTk-lD-XXr">
                                 <rect key="frame" x="8" y="358" width="359" height="30"/>
@@ -108,6 +130,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerButtonPressed:" destination="hmp-hd-iSU" eventType="touchUpInside" id="O5l-Jn-Bxr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -137,10 +162,36 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="b3s-CS-m5B"/>
                     </view>
+                    <connections>
+                        <outlet property="codeTextField" destination="bvA-0o-dHQ" id="Xfe-KW-Ez9"/>
+                        <outlet property="emailTextField" destination="UTk-lD-XXr" id="ODz-BT-cA6"/>
+                        <outlet property="lastNameTextField" destination="OJw-QC-p2M" id="aHx-jW-AHP"/>
+                        <outlet property="nameTextField" destination="Pwe-ec-ive" id="fbA-Av-SUx"/>
+                        <outlet property="passwordTextField" destination="mso-Xx-jds" id="qg1-nU-EzR"/>
+                        <outlet property="phoneNumberTextField" destination="zvT-nq-iXW" id="XJX-FB-iTl"/>
+                        <outlet property="requestButtonOutlet" destination="8bJ-rc-jqc" id="gwq-Ox-Tzs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dkv-7N-n7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21.600000000000001" y="114.69265367316342"/>
+            <point key="canvasLocation" x="858" y="-24"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="FcT-XU-Yfr">
+            <objects>
+                <tabBarController storyboardIdentifier="mainVC" id="wmy-eA-sfc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Ae-X5-q8H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="pbs-RB-Acc" kind="relationship" relationship="viewControllers" id="gD2-sc-36b"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1G-XS-WZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-836" y="320"/>
         </scene>
     </scenes>
     <resources>

@@ -19,6 +19,8 @@
 		DF2B553D20F8399400252B47 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B553C20F8399400252B47 /* Constants.swift */; };
 		DF2B554120F8424A00252B47 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B554020F8424A00252B47 /* RegisterViewController.swift */; };
 		DF2B554320F84E0A00252B47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2B554220F84E0A00252B47 /* Main.storyboard */; };
+		DF2B554620FEB1A200252B47 /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B554520FEB1A100252B47 /* FUser.swift */; };
+		DF2B554820FEC08E00252B47 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B554720FEC08E00252B47 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		DF2B554020F8424A00252B47 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DF2B554220F84E0A00252B47 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DF2B554420F85E3500252B47 /* Rsapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rsapp.entitlements; sourceTree = "<group>"; };
+		DF2B554520FEB1A100252B47 /* FUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
+		DF2B554720FEC08E00252B47 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 				DF13FA8D20F6F1270096D0EA /* AppDelegate.swift */,
 				DF2B554020F8424A00252B47 /* RegisterViewController.swift */,
 				DF2B553C20F8399400252B47 /* Constants.swift */,
+				DF2B554720FEC08E00252B47 /* Settings.swift */,
+				DF2B554520FEB1A100252B47 /* FUser.swift */,
 				DF13FA9420F6F1290096D0EA /* Assets.xcassets */,
 				DF13FA9620F6F1290096D0EA /* LaunchScreen.storyboard */,
 				DF13FA9920F6F1290096D0EA /* Info.plist */,
@@ -405,6 +411,8 @@
 				DF2B554120F8424A00252B47 /* RegisterViewController.swift in Sources */,
 				DF13FA8E20F6F1270096D0EA /* AppDelegate.swift in Sources */,
 				DF2B553D20F8399400252B47 /* Constants.swift in Sources */,
+				DF2B554620FEB1A200252B47 /* FUser.swift in Sources */,
+				DF2B554820FEC08E00252B47 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
