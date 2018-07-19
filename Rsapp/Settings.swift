@@ -7,14 +7,16 @@
 //
 
 import Foundation
-private let dateFormat  = "yyyymmddhhss"
 
-func dateFormatter() -> DateFormatter {
+private let dateFormat = "yyyMMddHHmmss"
+
+func dateFormatter() -> DateFormatter{
     
-   let dateFormatter = DateFormatter()
-   DateFormatter.dateFormat = dateFormat
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = dateFormat
     
     return dateFormatter
     
 }
+
 
