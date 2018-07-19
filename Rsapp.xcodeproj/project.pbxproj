@@ -21,6 +21,8 @@
 		DF2B554320F84E0A00252B47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2B554220F84E0A00252B47 /* Main.storyboard */; };
 		DF2B554620FEB1A200252B47 /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B554520FEB1A100252B47 /* FUser.swift */; };
 		DF2B554820FEC08E00252B47 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2B554720FEC08E00252B47 /* Settings.swift */; };
+		DFEDA1FB21002ECB00A22FDC /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEDA1FA21002ECB00A22FDC /* FirebaseAuth.framework */; };
+		DFEDA1FD2100302E00A22FDC /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEDA1FC2100302E00A22FDC /* FirebaseCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		DF2B554420F85E3500252B47 /* Rsapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rsapp.entitlements; sourceTree = "<group>"; };
 		DF2B554520FEB1A100252B47 /* FUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
 		DF2B554720FEC08E00252B47 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		DFEDA1FA21002ECB00A22FDC /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFEDA1FC2100302E00A22FDC /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFEDA1FD2100302E00A22FDC /* FirebaseCore.framework in Frameworks */,
+				DFEDA1FB21002ECB00A22FDC /* FirebaseAuth.framework in Frameworks */,
 				521CFC0BFD17838A7CCF5638 /* Pods_Rsapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +108,8 @@
 		65D87716067E0ED85E53BCF8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFEDA1FC2100302E00A22FDC /* FirebaseCore.framework */,
+				DFEDA1FA21002ECB00A22FDC /* FirebaseAuth.framework */,
 				B0721CE10C27CB37C6B9BAB6 /* Pods_Rsapp.framework */,
 				884CE85E0ECFAEEFF525BE30 /* Pods_RsappTests.framework */,
 				DE7A411E07AD93B098008B31 /* Pods_RsappUITests.framework */,

@@ -124,7 +124,15 @@ class FUser{
         }
         return nil
     }
-    class func registerUserWith(email:String, password:String, firtName:String, lastName:String, complition:@escaping (_ error: error)-> Void){
+    class func registerUserWith(email:String, password:String, firtName:String, lastName:String, complition:@escaping (_ error: Error?)-> Void){
+        
+        Auth.auth().createUser(withEmail: email, password: password) { (firUser, error) in
+            if error != nil{
+                complition(error)
+                return
+           }
+//           let fUser = FUser(_objectId: firUser!.uid, _pushId: "", _createdAt: Date(), _updatedAt: Date(), _firstNane: firtName, _lastName: lastName)
+        }
         
     }
     
