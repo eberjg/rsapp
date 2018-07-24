@@ -7,8 +7,10 @@
 //
 
 import Foundation
-
+import Firebase
 var backendless = Backendless.sharedInstance()
+var firebase = Database.database().reference()
+
 //Ids and Keys
 public let kONESIGNALAPPID = "268d5d45-b02c-403b-b686-9a2841f04820"
 

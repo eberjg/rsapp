@@ -126,16 +126,49 @@ class FUser{
     }
     class func registerUserWith(email:String, password:String, firtName:String, lastName:String, complition:@escaping (_ error: Error?)-> Void){
         
-        Auth.auth().createUser(withEmail: email, password: password) { (firUser, error) in
+       
+        Auth.auth().createUser(withEmail: email, password: password) { (authDataResult, error) in
+            
+        //}
+        //Auth.auth().createUser(withEmail: email, password: password) { (firUser, error) in
             if error != nil{
                 complition(error)
                 return
            }
-//           let fUser = FUser(_objectId: firUser!.uid, _pushId: "", _createdAt: Date(), _updatedAt: Date(), _firstNane: firtName, _lastName: lastName)
+            let fUser = FUser(_objectId: (authDataResult?.user.uid)!, _pushId: "", _createdAt: Date(), _updatedAt: Date(), _firstNane: firtName, _lastName: lastName)
+            
+            saveUserLocally(fUser: fUser)
+            //save to firebase
+            
+            complition(error)
+            
         }
         
     }
     
+}//end of class
+
+//MARK: Saving User
+
+func saveUserInBackground(fUser: FUser){
+    
+    
+}
+
+func saveUserLocally(fUser: FUser){
+    
+    UserDefaults.standard.set(userDictionaryFrom(user: fUser), forKey:kCURRENTUSER)
+    UserDefaults.standard.synchronize()
+}
+
+
+//MARK: helper function
+
+func userDictionaryFrom(user: FUser) ->NSDictionary{
+    let createdAt = dateFormatter().string(from: user.createdAt)
+    let updatedAt = dateFormatter().string(from: user.updatedAt)
+    
+    return NSDictionary(objects: [user.objectId, createdAt, updatedAt, user.company, user.pushId!, user.firstName, user.lastName, user.fullName,user.avatar, user.phoneNumber, user.additionalPhoneNumber, user.isAgent, user.coins, user.favoriteProperty], forKeys: [kOBJECTID as NSCopying, kCREATEDAT as NSCopying,kUPDATEDAT as NSCopying,kCOMPANY as NSCopying ,kPUSHID as NSCopying ,kFIRSTNAME as NSCopying ,kLASTNAME as NSCopying,kFULLNAME as NSCopying ,kAVATAR as NSCopying ,kPHONE as NSCopying ,kADDPHONE as NSCopying,kISAGENT as NSCopying,kCOINS as NSCopying,kFAVORITE as NSCopying])
 }
 
 
