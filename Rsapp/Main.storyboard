@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vqg-5h-Jlh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-18" y="51"/>
+            <point key="canvasLocation" x="-334" y="-95"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="t5u-cV-3X2">
@@ -67,7 +67,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="requestButtonPressed:" destination="hmp-hd-iSU" eventType="touchUpInside" id="Pr1-wJ-Evv"/>
+                                            <action selector="requestButtonPressed:" destination="hmp-hd-iSU" eventType="touchUpInside" id="jdO-iu-hwK"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -131,7 +131,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="registerButtonPressed:" destination="hmp-hd-iSU" eventType="touchUpInside" id="O5l-Jn-Bxr"/>
+                                    <action selector="emailRegisterButtonPressed:" destination="hmp-hd-iSU" eventType="touchUpInside" id="SCQ-ng-eD9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -169,7 +169,7 @@
                         <outlet property="nameTextField" destination="Pwe-ec-ive" id="fbA-Av-SUx"/>
                         <outlet property="passwordTextField" destination="mso-Xx-jds" id="qg1-nU-EzR"/>
                         <outlet property="phoneNumberTextField" destination="zvT-nq-iXW" id="XJX-FB-iTl"/>
-                        <outlet property="requestButtonOutlet" destination="8bJ-rc-jqc" id="gwq-Ox-Tzs"/>
+                        <outlet property="requestButtonOutlet" destination="8bJ-rc-jqc" id="fFg-dX-XN9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dkv-7N-n7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -191,7 +191,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1G-XS-WZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-836" y="320"/>
+            <point key="canvasLocation" x="-1062" y="256"/>
         </scene>
     </scenes>
     <resources>

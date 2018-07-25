@@ -138,7 +138,7 @@ class FUser{
             let fUser = FUser(_objectId: (authDataResult?.user.uid)!, _pushId: "", _createdAt: Date(), _updatedAt: Date(), _firstNane: firtName, _lastName: lastName)
             
             saveUserLocally(fUser: fUser)
-            //save to firebase
+            saveUserInBackground(fUser: fUser)
             
             complition(error)
             
@@ -152,7 +152,8 @@ class FUser{
 
 func saveUserInBackground(fUser: FUser){
     
-    
+    let ref = firebase.child(kUSER).child(fUser.objectId)
+    ref.setValue(userDictionaryFrom(user: fUser))
 }
 
 func saveUserLocally(fUser: FUser){
