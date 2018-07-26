@@ -55,6 +55,7 @@ class RegisterViewController: UIViewController {
     }
     
     func goToApp() {
+        
         let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainVC")as! UITabBarController
         self.present(mainView, animated: true, completion:nil)
         

@@ -146,10 +146,20 @@ class FUser{
         
     }
     //user register by phone
-    class func registerUserWith(phoneNumber: String, verificationCode: String, complition:@escaping (_ error: Error?)-> Void) {
+    class func registerUserWith(phoneNumber: String, verificationCode: String, complition:@escaping (_ error: Error?, _ shouldLogin: Bool)-> Void) {
         
         let verificationID = UserDefaults.standard.value(forKey: kVERIFICATIONCODE)
-    
+        let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationID as! String, verificationCode: verificationCode)
+        Auth.auth().signIn(with: credential) { (authDataResult, error) in
+            
+            if error != nil{
+                complition(error!, false)
+                
+                return
+            }
+            //check if user is logged else register
+            
+        }
     }
     
     
@@ -172,6 +182,23 @@ func saveUserLocally(fUser: FUser){
 
 
 //MARK: helper function
+
+func fetchsUserWith(userId: String, complition: @escaping(_ user: FUser?)->Void) {
+    
+    firebase.child(kUSER).queryOrdered(byChild: kOBJECTID).queryEqual(toValue: userId).observeSingleEvent(of: .value) { (snapshot) in
+        
+        if snapshot.exists() {
+            
+            let userDictionary = ((snapshot.value as! NSDictionary).allValues as NSArray).firstObject! as! NSDictionary
+            
+            let user = FUser(_dictionry: userDictionary)
+            complition(user)
+            
+        }else{
+            complition(nil)
+        }
+    }
+}
 
 func userDictionaryFrom(user: FUser) ->NSDictionary{
     let createdAt = dateFormatter().string(from: user.createdAt)
