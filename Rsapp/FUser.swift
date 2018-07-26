@@ -145,6 +145,14 @@ class FUser{
         }
         
     }
+    //user register by phone
+    class func registerUserWith(phoneNumber: String, verificationCode: String, complition:@escaping (_ error: Error?)-> Void) {
+        
+        let verificationID = UserDefaults.standard.value(forKey: kVERIFICATIONCODE)
+    
+    }
+    
+    
     
 }//end of class
 

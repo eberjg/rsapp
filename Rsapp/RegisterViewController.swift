@@ -38,8 +38,9 @@ class RegisterViewController: UIViewController {
                     print(" Errro registering user with email: \(error?.localizedDescription)")
                     return
                 }
-                let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainVC")as! UITabBarController
-                self.present(mainView, animated: true, completion:nil)
+                self.goToApp()
+//                let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainVC")as! UITabBarController
+//                self.present(mainView, animated: true, completion:nil)
             }
         }
         
@@ -47,14 +48,17 @@ class RegisterViewController: UIViewController {
     // x button
     @IBAction func closedButtonPressed(_ sender: Any) {
         
-        let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainVC")as! UITabBarController
-        self.present(mainView, animated: true, completion:nil)
+        goToApp()
     }
     
     @IBAction func requestButtonPressed(_ sender: Any) {
     }
     
-   
+    func goToApp() {
+        let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainVC")as! UITabBarController
+        self.present(mainView, animated: true, completion:nil)
+        
+    }
 }//end of class
     
     //override func didReceiveMemoryWarning() {
@@ -62,7 +66,7 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
    // }
     
-    // MARK: - Navigation
+
 
 
 
