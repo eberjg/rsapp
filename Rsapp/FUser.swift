@@ -158,7 +158,21 @@ class FUser{
                 return
             }
             //check if user is logged else register
-            
+            fetchsUserWith(userId: (authDataResult!.uid), complition: { (user) in
+                if user != nil && user?.firstName != "" {
+                    //we have a user, login
+                    saveUserLocally(fUser: user!)
+                    complition(error, true)
+                }else {
+                    //we have no user, register user
+                    let fuser = FUser.init(_objectId: authDataResult!.uid, _pushId: "", _createdAt: Date(), _updatedAt: Date(), _firstNane: "", _lastName: "", _phoneNumber: authDataResult!.phoneNumber!)
+                    
+                    saveUserLocally(fUser: fuser)
+                    saveUserInBackground(fUser: fuser)
+                    complition(error, false)
+                    
+                }
+            })
         }
     }
     
