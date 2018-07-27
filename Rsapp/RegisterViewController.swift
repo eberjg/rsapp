@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
     
@@ -20,6 +21,8 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    var phoneNumber: String?
     
     
     override func viewDidLoad() {
@@ -52,8 +55,50 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func requestButtonPressed(_ sender: Any) {
+        
+        if phoneNumberTextField.text != ""{
+            PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumberTextField.text!, uiDelegate: nil) { (verificationID, error) in
+                if error != nil{
+                    print("error phone number \(error?.localizedDescription)")
+                    return
+                    
+            }
+                
+                
+              //  }
+                
+                self .phoneNumber = self.phoneNumberTextField.text!
+                self.phoneNumberTextField.text = ""
+                self.phoneNumberTextField.placeholder = self.phoneNumber!
+                
+                self.phoneNumberTextField.isEnabled = false
+                self.codeTextField.isHidden = false
+                self.requestButtonOutlet.setTitle("Register", for: .normal)
+                
+                UserDefaults.standard.set(verificationID, forKey: kVERIFICATIONCODE)
+                UserDefaults.standard.synchronize()
+            }
+        }
+        if codeTextField.text != ""{
+            FUser.registerUserWith(phoneNumber: phoneNumber!, verificationCode: codeTextField.text!, complition:{ (error, shouldLogin) in
+                
+                if error != nil {
+                    print("error \(error?.localizedDescription)")
+                    return
+                }
+                if shouldLogin {
+                    //go to main view
+                    print("go to main view")
+                }else{
+                    //go to finish register view
+                     print("go to register view")
+                }
+            })
+            
+        }
+        
     }
-    
+
     func goToApp() {
         
         let mainView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainVC")as! UITabBarController
@@ -67,6 +112,7 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
    // }
     
+
 
 
 

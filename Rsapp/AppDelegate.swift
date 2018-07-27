@@ -26,8 +26,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         backendless!.initApp(APP_ID, apiKey: API_KEY)
         OneSignal.initWithLaunchOptions(launchOptions, appId: kONESIGNALAPPID, handleNotificationReceived: nil, handleNotificationAction: nil, settings: nil)
         
+        if #available(iOS 10.0, *){
+            
+            let center = UNUserNotificationCenter.current()
+            
+            center.requestAuthorization(options: [.badge, .alert, .sound]) { (grated, error) in
+                
+            }
+            application.registerForRemoteNotifications()
+        }
+        
         return true
+        
+    }//end of class
+    
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data){
+        
+        Auth.auth().setAPNSToken(deviceToken, type: .prod)
+        //.sandbox
+        //.prod
     }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        if Auth.auth().canHandleNotification(userInfo){
+            completionHandler(.noData)
+            return
+        }
+        //this is not firebase notification
+        func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error){
+            
+            print("Failed to register for user notification")
+            
+        }
+            
+            
+        }
+    }
+    
+    
+
+
+    
+
+        
+
+    
+    //different function below/////////////
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -52,5 +98,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-}
+
 
