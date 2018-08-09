@@ -146,14 +146,14 @@ class FUser{
         
     }
     //user register by phone
-    class func registerUserWith(phoneNumber: String, verificationCode: String, complition:@escaping (_ error: Error?, _ shouldLogin: Bool)-> Void) {
+    class func registerUserWith(phoneNumber: String, verificationCode: String, completion:@escaping (_ error: Error?, _ shouldLogin: Bool)-> Void) {
         
         let verificationID = UserDefaults.standard.value(forKey: kVERIFICATIONCODE)
         let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationID as! String, verificationCode: verificationCode)
         Auth.auth().signIn(with: credential) { (authDataResult, error) in
             
             if error != nil{
-                complition(error!, false)
+                completion(error!, false)
                 
                 return
             }
@@ -162,14 +162,14 @@ class FUser{
                 if user != nil && user?.firstName != "" {
                     //we have a user, login
                     saveUserLocally(fUser: user!)
-                    complition(error, true)
+                    completion(error, true)
                 }else {
                     //we have no user, register user
                     let fuser = FUser.init(_objectId: authDataResult!.uid, _pushId: "", _createdAt: Date(), _updatedAt: Date(), _firstNane: "", _lastName: "", _phoneNumber: authDataResult!.phoneNumber!)
                     
                     saveUserLocally(fUser: fuser)
                     saveUserInBackground(fUser: fuser)
-                    complition(error, false)
+                    completion(error, false)
                     
                 }
             })

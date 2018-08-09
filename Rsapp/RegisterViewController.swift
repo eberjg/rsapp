@@ -57,7 +57,7 @@ class RegisterViewController: UIViewController {
     @IBAction func requestButtonPressed(_ sender: Any) {
         
         if phoneNumberTextField.text != ""{
-            PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumberTextField.text!, uiDelegate: nil) { (verificationID, error) in
+            PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumberTextField.text!, uiDelegate: nil, completion: { (verificationID, error) in
                 if error != nil{
                     print("error phone number \(error?.localizedDescription)")
                     return
@@ -77,10 +77,11 @@ class RegisterViewController: UIViewController {
                 
                 UserDefaults.standard.set(verificationID, forKey: kVERIFICATIONCODE)
                 UserDefaults.standard.synchronize()
-            }
+            })
         }
+    
         if codeTextField.text != ""{
-            FUser.registerUserWith(phoneNumber: phoneNumber!, verificationCode: codeTextField.text!, complition:{ (error, shouldLogin) in
+            FUser.registerUserWith(phoneNumber: phoneNumber!, verificationCode: codeTextField.text!, completion:{ (error, shouldLogin) in
                 
                 if error != nil {
                     print("error \(error?.localizedDescription)")

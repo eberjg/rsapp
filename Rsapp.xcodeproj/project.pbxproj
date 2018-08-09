@@ -263,6 +263,9 @@
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 0940;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Keychain = {
 								enabled = 0;
 							};
