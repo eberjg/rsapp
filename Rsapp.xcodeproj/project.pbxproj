@@ -10,6 +10,8 @@
 		521CFC0BFD17838A7CCF5638 /* Pods_Rsapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0721CE10C27CB37C6B9BAB6 /* Pods_Rsapp.framework */; };
 		AC397143B3A474BA79116474 /* Pods_RsappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7A411E07AD93B098008B31 /* Pods_RsappUITests.framework */; };
 		D14BBF99BF4DC23236ABD6CD /* Pods_RsappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884CE85E0ECFAEEFF525BE30 /* Pods_RsappTests.framework */; };
+		DC18B3FB211BCA57003ECDEE /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC18B3F9211BCA57003ECDEE /* ProgressHUD.bundle */; };
+		DC18B3FC211BCA57003ECDEE /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DC18B3FA211BCA57003ECDEE /* ProgressHUD.m */; };
 		DF13FA8E20F6F1270096D0EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13FA8D20F6F1270096D0EA /* AppDelegate.swift */; };
 		DF13FA9520F6F1290096D0EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF13FA9420F6F1290096D0EA /* Assets.xcassets */; };
 		DF13FA9820F6F1290096D0EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF13FA9620F6F1290096D0EA /* LaunchScreen.storyboard */; };
@@ -51,6 +53,9 @@
 		B0721CE10C27CB37C6B9BAB6 /* Pods_Rsapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rsapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3B64DCBF4F1201C47660A8 /* Pods-RsappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RsappTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RsappTests/Pods-RsappTests.release.xcconfig"; sourceTree = "<group>"; };
 		D46ECF6EEA985263F8C808DE /* Pods-RsappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RsappUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RsappUITests/Pods-RsappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC18B3F8211BCA57003ECDEE /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		DC18B3F9211BCA57003ECDEE /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		DC18B3FA211BCA57003ECDEE /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		DE7A411E07AD93B098008B31 /* Pods_RsappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RsappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13FA8A20F6F1270096D0EA /* Rsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13FA8D20F6F1270096D0EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +135,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DC18B3F7211BCA57003ECDEE /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				DC18B3F8211BCA57003ECDEE /* ProgressHUD.h */,
+				DC18B3F9211BCA57003ECDEE /* ProgressHUD.bundle */,
+				DC18B3FA211BCA57003ECDEE /* ProgressHUD.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = SOURCE_ROOT;
+		};
 		DF13FA8120F6F1270096D0EA = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +182,7 @@
 				DF13FA9920F6F1290096D0EA /* Info.plist */,
 				DF13FABB20F6F5800096D0EA /* GoogleService-Info.plist */,
 				DF13FABD20F700D60096D0EA /* Rsapp-Bridging-Header.h */,
+				DC18B3F7211BCA57003ECDEE /* ProgressHUD */,
 			);
 			path = Rsapp;
 			sourceTree = "<group>";
@@ -312,6 +328,7 @@
 				DF13FA9820F6F1290096D0EA /* LaunchScreen.storyboard in Resources */,
 				DF2B554320F84E0A00252B47 /* Main.storyboard in Resources */,
 				DF13FA9520F6F1290096D0EA /* Assets.xcassets in Resources */,
+				DC18B3FB211BCA57003ECDEE /* ProgressHUD.bundle in Resources */,
 				DF13FABC20F6F5800096D0EA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC18B3FC211BCA57003ECDEE /* ProgressHUD.m in Sources */,
 				DF2B554120F8424A00252B47 /* RegisterViewController.swift in Sources */,
 				DF13FA8E20F6F1270096D0EA /* AppDelegate.swift in Sources */,
 				DF2B553D20F8399400252B47 /* Constants.swift in Sources */,

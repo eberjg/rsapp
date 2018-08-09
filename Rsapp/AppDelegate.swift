@@ -26,6 +26,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         backendless!.initApp(APP_ID, apiKey: API_KEY)
         OneSignal.initWithLaunchOptions(launchOptions, appId: kONESIGNALAPPID, handleNotificationReceived: nil, handleNotificationAction: nil, settings: nil)
         
+        //user > posting notification login
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if user != nil {
+                if UserDefaults.standard.object(forKey: kCURRENTUSER) != nil{
+                    DispatchQueue.main.async {
+                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "userDidLoginNotification"), object: nil, userInfo: ["userId" : FUser.currentId()])
+                    }
+                }
+            }
+        }
+        
+        func onUserDidLogin(userId: String){
+            //start oneSignal func from below
+            startOneSignal()
+            
+        }
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "userDidLoginNotification"), object: nil, queue: nil) { (note) in
+            
+            let userId = note.userInfo!["userId"] as! String
+            UserDefaults.standard.set(userId, forKey: "userId")
+            UserDefaults.standard.synchronize()
+            
+            onUserDidLogin(userId: userId)
+        }
+        
         if #available(iOS 10.0, *){
             
             let center = UNUserNotificationCenter.current()
@@ -38,7 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
         
-    }//end of class
+    }
     
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data){
@@ -60,10 +86,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Failed to register for user notification")
             
         }
+        //MARK: OneSignal
+        
+        func startOneSignal() {
             
+            let status: OSPermissionSubscriptionState = OneSignal.getPermissionSubscriptionState()
             
+            let userID = status.subscriptionStatus.userId
+            let pushToken = status.subscriptionStatus.pushToken
+            
+            //check if we  have pushToken
+            if pushToken != nil {
+                if let playerId = userID {
+                    UserDefaults.standard.set(playerId, forKey: "OneSignalId")
+                }else{
+                    UserDefaults.standard.removeObject(forKey: "OneSignalId")
+                }
+            }
+            //save to our user object
         }
+            
     }
+}//end of class
     
     
 

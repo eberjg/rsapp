@@ -222,16 +222,67 @@ func userDictionaryFrom(user: FUser) ->NSDictionary{
 }
 
 
+func updateCurrertUser(withValues: [String : Any], withBlock: @escaping(_ seccess: Bool)->Void)
+{
+    
+    if UserDefaults.standard.object(forKey: kCURRENTUSER) != nil {
+        
+        let curruntUser = FUser.currentUser()!
+        
+        let userObject = userDictionaryFrom(user: curruntUser).mutableCopy() as! NSMutableDictionary
+
+        userObject.setValuesForKeys(withValues)
+        
+        let ref = firebase.child(kUSER).child(curruntUser.objectId)
+        
+        ref.updateChildValues(withValues, withCompletionBlock: { (error, ref) in
+            
+            if error != nil {
+                withBlock(false)
+                return
+                
+            }
+            
+            UserDefaults.standard.setValue(userObject, forKey: kCURRENTUSER)
+            UserDefaults.standard.synchronize()
+            
+            withBlock(true)
+            
+        })
+    }
+    
+}
+
+//MARK: OneSignal
+
+updateOneSignalId() {
+    
+    if FUser.currentUser() != nil {
+        
+        if let pushId = UserDefaults.standard.string(forKey: "OneSignailId"){
+            //set one signal id
+            setOneSignalId(pushId: pushId)
+        }else{
+            //removed one signal id
+            removeOneSignalId()
+        }
+    }
+}
 
 
+func setOneSignalId(pushId: String) {
+    
+    updateCurrentUserOneSignalId(newId: pushId)
+}
 
+func removeOneSignalId() {
+    
+}
 
-
-
-
-
-
-
+func updateCurrentUserOneSignalId(newId: String){
+    
+    
+}
 
 
 
