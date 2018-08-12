@@ -12,6 +12,8 @@
 		D14BBF99BF4DC23236ABD6CD /* Pods_RsappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884CE85E0ECFAEEFF525BE30 /* Pods_RsappTests.framework */; };
 		DC18B3FB211BCA57003ECDEE /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC18B3F9211BCA57003ECDEE /* ProgressHUD.bundle */; };
 		DC18B3FC211BCA57003ECDEE /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DC18B3FA211BCA57003ECDEE /* ProgressHUD.m */; };
+		DC18B3FE21205C44003ECDEE /* RecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18B3FD21205C44003ECDEE /* RecentViewController.swift */; };
+		DC18B403212060B9003ECDEE /* propertyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18B402212060B9003ECDEE /* propertyCollectionViewCell.swift */; };
 		DF13FA8E20F6F1270096D0EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13FA8D20F6F1270096D0EA /* AppDelegate.swift */; };
 		DF13FA9520F6F1290096D0EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF13FA9420F6F1290096D0EA /* Assets.xcassets */; };
 		DF13FA9820F6F1290096D0EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF13FA9620F6F1290096D0EA /* LaunchScreen.storyboard */; };
@@ -56,6 +58,8 @@
 		DC18B3F8211BCA57003ECDEE /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		DC18B3F9211BCA57003ECDEE /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		DC18B3FA211BCA57003ECDEE /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		DC18B3FD21205C44003ECDEE /* RecentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentViewController.swift; sourceTree = "<group>"; };
+		DC18B402212060B9003ECDEE /* propertyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = propertyCollectionViewCell.swift; sourceTree = "<group>"; };
 		DE7A411E07AD93B098008B31 /* Pods_RsappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RsappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13FA8A20F6F1270096D0EA /* Rsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13FA8D20F6F1270096D0EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +149,31 @@
 			path = ProgressHUD;
 			sourceTree = SOURCE_ROOT;
 		};
+		DC18B3FF21205CA9003ECDEE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DF2B553C20F8399400252B47 /* Constants.swift */,
+				DF2B554720FEC08E00252B47 /* Settings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		DC18B40021205CCE003ECDEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF2B554520FEB1A100252B47 /* FUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC18B40121205CF6003ECDEE /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				DF2B554020F8424A00252B47 /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		DF13FA8120F6F1270096D0EA = {
 			isa = PBXGroup;
 			children = (
@@ -173,10 +202,11 @@
 				DF2B554420F85E3500252B47 /* Rsapp.entitlements */,
 				DF2B554220F84E0A00252B47 /* Main.storyboard */,
 				DF13FA8D20F6F1270096D0EA /* AppDelegate.swift */,
-				DF2B554020F8424A00252B47 /* RegisterViewController.swift */,
-				DF2B553C20F8399400252B47 /* Constants.swift */,
-				DF2B554720FEC08E00252B47 /* Settings.swift */,
-				DF2B554520FEB1A100252B47 /* FUser.swift */,
+				DC18B3FD21205C44003ECDEE /* RecentViewController.swift */,
+				DC18B402212060B9003ECDEE /* propertyCollectionViewCell.swift */,
+				DC18B40121205CF6003ECDEE /* Register */,
+				DC18B3FF21205CA9003ECDEE /* Settings */,
+				DC18B40021205CCE003ECDEE /* Model */,
 				DF13FA9420F6F1290096D0EA /* Assets.xcassets */,
 				DF13FA9620F6F1290096D0EA /* LaunchScreen.storyboard */,
 				DF13FA9920F6F1290096D0EA /* Info.plist */,
@@ -440,10 +470,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC18B3FC211BCA57003ECDEE /* ProgressHUD.m in Sources */,
+				DC18B3FE21205C44003ECDEE /* RecentViewController.swift in Sources */,
 				DF2B554120F8424A00252B47 /* RegisterViewController.swift in Sources */,
 				DF13FA8E20F6F1270096D0EA /* AppDelegate.swift in Sources */,
 				DF2B553D20F8399400252B47 /* Constants.swift in Sources */,
 				DF2B554620FEB1A200252B47 /* FUser.swift in Sources */,
+				DC18B403212060B9003ECDEE /* propertyCollectionViewCell.swift in Sources */,
 				DF2B554820FEC08E00252B47 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
