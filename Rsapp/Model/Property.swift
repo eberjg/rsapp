@@ -65,5 +65,100 @@ class Property: NSObject {
         
     }
     
+    //MARK: Delete Function
+    func deleteProperty(property: Property){
+        
+         let dataStore = backendless!.data.of(Property().ofClass())
+            dataStore!.remove(property)
+    }
+    func deleteProperty(property: Property, completion: @escaping(_ value: String)-> Void){
+        
+        let dataStore = backendless!.data.of(Property().ofClass())
+        dataStore!.remove(property, response: { (result) in
+            
+            completion("Success")
+            
+        }) {(fault : Fault?) in
+            
+            completion(fault!.message)
+    }
+ }
+    //MARK: Serch function
+    class func fetchResentPropperties(likitNumber: Int, completion: @escaping(_ properties: [Property?])-> Void) {
+        
+        let quiryBuilder = DataQueryBuilder()
+        quiryBuilder!.setSortBy(["inTopUntil DESC"])
+        quiryBuilder!.setPageSize(Int32(likitNumber))
+        quiryBuilder!.setOffset(0)
+        
+        let dataStore = backendless!.data.of(Property().ofClass())
+        
+        dataStore!.find(quiryBuilder, response: { (backendlessProperties) in
+            
+            completion(backendlessProperties as! [Property])
+            
+        }) {(fault : Fault?) in
+            
+            print("Error, coudn't get recent property")
+            completion([])
+        
+    }
+  }
+    
+    class func fetchAllProperties(completion: @escaping (_ Properties: [Property?])-> Void) {
+        
+        let dataStore = backendless!.data.of(Property().ofClass())
+        dataStore!.find({(allProperties) in
+            
+              completion(allProperties as! [Property])
+            
+        }){(fault : Fault) in
+            
+            print("Error, coudn't get recent property \(fault.message)")
+            completion([])
+            
+        }
+    }
+    
+    class func fetchPropertiesWith(whereClause: String, completion: @escaping (_ Properties: [Property?])-> Void) {
+        
+        let quiryBuilder = DataQueryBuilder()
+        quiryBuilder!.setWhereClause(whereClause)
+        quiryBuilder!.setSortBy(["inTopUntil DESC"])
+      
+     let dataStore = backendless!.data.of(Property().ofClass())
+        
+        dataStore!.find(quiryBuilder, response: {(allProperties) in
+        
+        completion(allProperties as! [Property])
+            
+    }){(fault : Fault) in
+    
+     print("Error, coudn't get recent property \(fault.message)")
+    completion([])
+        
+        
+        
+    }
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
