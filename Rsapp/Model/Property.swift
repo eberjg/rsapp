@@ -139,7 +139,7 @@ class Property: NSObject {
         
         
         
-    }
+            } as! (Fault?) -> Void as! (Fault?) -> Void
   }
 
 }
