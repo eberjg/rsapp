@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         func onUserDidLogin(userId: String){
             //start oneSignal func from below
-            startOneSignal()
+           // startOneSignal()
             
         }
         
@@ -104,6 +104,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
             //save to our user object
+            updateOneSignalId()
         }
             
     }

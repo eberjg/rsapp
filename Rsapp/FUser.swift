@@ -255,7 +255,7 @@ func updateCurrertUser(withValues: [String : Any], withBlock: @escaping(_ secces
 
 //MARK: OneSignal
 
-updateOneSignalId() {
+func updateOneSignalId() {
     
     if FUser.currentUser() != nil {
         
@@ -277,14 +277,20 @@ func setOneSignalId(pushId: String) {
 
 func removeOneSignalId() {
     
+    updateCurrentUserOneSignalId(newId: "")
+    
+    
 }
 
 func updateCurrentUserOneSignalId(newId: String){
     
+    updateCurrertUser(withValues: [kPUSHID : newId, kUPDATEDAT : dateFormatter().string(from: Date())]) {(success) in
+        
+        print("One Signal Id was updated - \(success)")
     
+    }
+
 }
-
-
 
 
 
