@@ -211,7 +211,7 @@
                                                         <constraint firstAttribute="bottom" secondItem="VRQ-8H-6jT" secondAttribute="bottom" constant="4" id="x5a-ZR-xeP"/>
                                                     </constraints>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1NU-hh-jo8">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sold" translatesAutoresizingMaskIntoConstraints="NO" id="1NU-hh-jo8">
                                                     <rect key="frame" x="309" y="31" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="1BU-yi-xay"/>
@@ -221,7 +221,7 @@
                                                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="D3A-OK-jRa">
                                                     <rect key="frame" x="169" y="117" width="20" height="20"/>
                                                 </activityIndicatorView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZSc-gO-1CC">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="topAd" translatesAutoresizingMaskIntoConstraints="NO" id="ZSc-gO-1CC">
                                                     <rect key="frame" x="10" y="30" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="5Se-Ne-C8N"/>
@@ -261,10 +261,13 @@
                                             <outlet property="bathroomLabel" destination="dwj-m1-Lwg" id="AE6-Qv-Kiz"/>
                                             <outlet property="imageView" destination="Rfb-qx-4XP" id="Pak-GD-zLB"/>
                                             <outlet property="likeButtonOutlet" destination="nn9-df-qwM" id="bqg-Ic-Oal"/>
+                                            <outlet property="loadingIndicator" destination="D3A-OK-jRa" id="kho-4V-mbB"/>
                                             <outlet property="parkingLabel" destination="3R1-0U-TqD" id="cVN-9Z-dgH"/>
                                             <outlet property="priceLabel" destination="egn-jk-8Y7" id="jMf-s1-THx"/>
                                             <outlet property="roomLabel" destination="k6b-nc-PI1" id="Xdn-sg-O5i"/>
+                                            <outlet property="soldImageView" destination="1NU-hh-jo8" id="4gS-mV-IzO"/>
                                             <outlet property="titleLabel" destination="Kx5-yf-QLY" id="XPh-DZ-TYy"/>
+                                            <outlet property="topImageView" destination="ZSc-gO-1CC" id="HqR-lg-69j"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -471,6 +474,8 @@
         <image name="Tub" width="25" height="25"/>
         <image name="ic_signup_close" width="14" height="14"/>
         <image name="propertyPlaceholder" width="240" height="180"/>
+        <image name="sold" width="40" height="40"/>
         <image name="star" width="25" height="25"/>
+        <image name="topAd" width="39" height="39"/>
     </resources>
 </document>

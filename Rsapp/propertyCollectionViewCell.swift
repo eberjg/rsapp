@@ -10,9 +10,16 @@ import UIKit
 
 class propertyCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    
+    @IBOutlet weak var soldImageView: UIImageView!
+    
+    @IBOutlet weak var topImageView: UIImageView!
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var titleLabel: UILabel!
+    
     @IBOutlet weak var likeButtonOutlet: UIButton!
     
     @IBOutlet weak var roomLabel: UILabel!
