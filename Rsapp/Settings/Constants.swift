@@ -35,4 +35,10 @@ public let kVERIFICATIONCODE = "firebase_verificationCode"
 public let kISAGENT = "isAgent"
 public let kFAVORITE = "favorite"
 
+//property
+public let kMAXIMAGENUMBER = 10
+public let kRECENTPROPERTYLIMIT = 20
+
+//FB NOTIFICATION
+
 

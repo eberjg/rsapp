@@ -112,9 +112,9 @@ class Property: NSObject {
             
               completion(allProperties as! [Property])
             
-        }){(fault : Fault) in
+        }) {(fault : Fault?) in
             
-            print("Error, coudn't get recent property \(fault.message)")
+            print("Error, coudn't get recent property \(fault?.message)")
             completion([])
             
         }
@@ -132,33 +132,15 @@ class Property: NSObject {
         
         completion(allProperties as! [Property])
             
-    }){(fault : Fault) in
+    }) {(fault : Fault?) in
     
-     print("Error, coudn't get recent property \(fault.message)")
+        print("Error, coudn't get recent property \(fault?.message)")
     completion([])
         
         
         
-            } as! (Fault?) -> Void as! (Fault?) -> Void
+            //} as! (Fault?) -> Void
   }
 
+ }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
