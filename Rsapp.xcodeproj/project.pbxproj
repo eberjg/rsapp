@@ -15,6 +15,7 @@
 		DC18B3FE21205C44003ECDEE /* RecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18B3FD21205C44003ECDEE /* RecentViewController.swift */; };
 		DC18B403212060B9003ECDEE /* propertyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18B402212060B9003ECDEE /* propertyCollectionViewCell.swift */; };
 		DC18B40521208C3D003ECDEE /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18B40421208C3D003ECDEE /* Property.swift */; };
+		DC2621D4212DD768007463E6 /* addPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2621D3212DD768007463E6 /* addPropertyViewController.swift */; };
 		DF13FA8E20F6F1270096D0EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13FA8D20F6F1270096D0EA /* AppDelegate.swift */; };
 		DF13FA9520F6F1290096D0EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF13FA9420F6F1290096D0EA /* Assets.xcassets */; };
 		DF13FA9820F6F1290096D0EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF13FA9620F6F1290096D0EA /* LaunchScreen.storyboard */; };
@@ -62,6 +63,7 @@
 		DC18B3FD21205C44003ECDEE /* RecentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentViewController.swift; sourceTree = "<group>"; };
 		DC18B402212060B9003ECDEE /* propertyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = propertyCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC18B40421208C3D003ECDEE /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		DC2621D3212DD768007463E6 /* addPropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPropertyViewController.swift; sourceTree = "<group>"; };
 		DE7A411E07AD93B098008B31 /* Pods_RsappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RsappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13FA8A20F6F1270096D0EA /* Rsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF13FA8D20F6F1270096D0EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				DF2B554220F84E0A00252B47 /* Main.storyboard */,
 				DF13FA8D20F6F1270096D0EA /* AppDelegate.swift */,
 				DC18B3FD21205C44003ECDEE /* RecentViewController.swift */,
+				DC2621D3212DD768007463E6 /* addPropertyViewController.swift */,
 				DC18B402212060B9003ECDEE /* propertyCollectionViewCell.swift */,
 				DC18B40121205CF6003ECDEE /* Register */,
 				DC18B3FF21205CA9003ECDEE /* Settings */,
@@ -473,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC18B40521208C3D003ECDEE /* Property.swift in Sources */,
+				DC2621D4212DD768007463E6 /* addPropertyViewController.swift in Sources */,
 				DC18B3FC211BCA57003ECDEE /* ProgressHUD.m in Sources */,
 				DC18B3FE21205C44003ECDEE /* RecentViewController.swift in Sources */,
 				DF2B554120F8424A00252B47 /* RegisterViewController.swift in Sources */,
