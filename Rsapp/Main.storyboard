@@ -507,11 +507,39 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0t-pQ-1Jk">
+                                        <rect key="frame" x="300" y="39" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="6UG-4G-uMv"/>
+                                            <constraint firstAttribute="height" constant="25" id="V9E-cw-Uwq"/>
+                                        </constraints>
+                                        <state key="normal" image="Camera"/>
+                                        <connections>
+                                            <action selector="cameraButtonPressed:" destination="Veg-V8-6lQ" eventType="touchUpInside" id="Qdd-dW-hp2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFR-9e-KHS">
+                                        <rect key="frame" x="342" y="39" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="fIz-d1-yi8"/>
+                                            <constraint firstAttribute="width" constant="25" id="xQj-1T-t0h"/>
+                                        </constraints>
+                                        <state key="normal" image="save"/>
+                                        <connections>
+                                            <action selector="saveButtonPressed:" destination="Veg-V8-6lQ" eventType="touchUpInside" id="ak9-MI-xzb"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.25904484680000001" green="0.90128483410000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.63503317636986301" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="a0t-pQ-1Jk" firstAttribute="top" secondItem="ARI-V7-XZ0" secondAttribute="top" constant="39" id="Mez-S4-1XO"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="iLx-Om-e7R"/>
+                                    <constraint firstItem="SFR-9e-KHS" firstAttribute="top" secondItem="ARI-V7-XZ0" secondAttribute="top" constant="39" id="if6-FV-j2D"/>
+                                    <constraint firstAttribute="bottom" secondItem="a0t-pQ-1Jk" secondAttribute="bottom" constant="11" id="mKg-3Q-8at"/>
+                                    <constraint firstAttribute="trailing" secondItem="SFR-9e-KHS" secondAttribute="trailing" constant="8" id="o35-1j-9Xh"/>
+                                    <constraint firstAttribute="bottom" secondItem="SFR-9e-KHS" secondAttribute="bottom" constant="11" id="vc0-j3-Hat"/>
                                     <constraint firstAttribute="height" constant="75" id="xzX-Pr-Syf"/>
+                                    <constraint firstItem="SFR-9e-KHS" firstAttribute="leading" secondItem="a0t-pQ-1Jk" secondAttribute="trailing" constant="17" id="yJa-WQ-8Du"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dt1-Oj-UYA">
@@ -760,6 +788,9 @@
                                                     <constraint firstAttribute="height" constant="31" id="Kw8-J0-Cjy"/>
                                                     <constraint firstAttribute="width" constant="47" id="jFY-8A-2h3"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="titleDeedSwitch:" destination="Veg-V8-6lQ" eventType="valueChanged" id="ESE-YR-bPe"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VL6-a2-dYd">
                                                 <rect key="frame" x="318" y="775" width="49" height="31"/>
@@ -767,6 +798,9 @@
                                                     <constraint firstAttribute="width" constant="47" id="8qH-Jt-bSe"/>
                                                     <constraint firstAttribute="height" constant="31" id="ihm-wc-nDn"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="centralHeatingSwitch:" destination="Veg-V8-6lQ" eventType="valueChanged" id="kQ4-CB-nuU"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NdA-zn-Ehn">
                                                 <rect key="frame" x="318" y="814" width="49" height="31"/>
@@ -774,12 +808,18 @@
                                                     <constraint firstAttribute="width" constant="47" id="I6P-w5-B4U"/>
                                                     <constraint firstAttribute="height" constant="31" id="wH1-43-Sl4"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="solarWetherHeatingSwitch:" destination="Veg-V8-6lQ" eventType="valueChanged" id="j5B-p0-MvM"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ael-ba-wOh">
                                                 <rect key="frame" x="318" y="854" width="51" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="Gko-0Q-k3F"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="storeRoomsSwitch:" destination="Veg-V8-6lQ" eventType="valueChanged" id="fKP-na-3PN"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TOR-Zn-mKA">
                                                 <rect key="frame" x="318" y="893" width="49" height="31"/>
@@ -787,6 +827,9 @@
                                                     <constraint firstAttribute="height" constant="31" id="Xrz-bu-30h"/>
                                                     <constraint firstAttribute="width" constant="47" id="mXw-2U-K8S"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="airConditionerSwitch:" destination="Veg-V8-6lQ" eventType="valueChanged" id="8ou-Ef-0v0"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LwU-OS-THY">
                                                 <rect key="frame" x="318" y="932" width="49" height="31"/>
@@ -794,6 +837,9 @@
                                                     <constraint firstAttribute="width" constant="47" id="ELv-gz-hMU"/>
                                                     <constraint firstAttribute="height" constant="31" id="Tw2-gd-ipX"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="furnishedSwitch:" destination="Veg-V8-6lQ" eventType="valueChanged" id="iRm-kJ-jRl"/>
+                                                </connections>
                                             </switch>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqb-CR-zSB">
                                                 <rect key="frame" x="8" y="986" width="126" height="142"/>
@@ -969,7 +1015,28 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Plus" id="ogZ-5O-5i4"/>
                     <connections>
+                        <outlet property="addressTextField" destination="bAb-ON-fUx" id="7iW-MG-bNW"/>
+                        <outlet property="advertismentTypeTextField" destination="xqR-M1-SN8" id="XwC-sp-gyT"/>
+                        <outlet property="airConditionerSwitch" destination="TOR-Zn-mKA" id="dhl-E4-LWe"/>
+                        <outlet property="bathroomsTextField" destination="7o4-Fr-PXx" id="iey-mg-O3e"/>
+                        <outlet property="buildYearTextField" destination="CgC-bC-WiN" id="0H6-Uy-MkE"/>
+                        <outlet property="centralHeatingSwitch" destination="VL6-a2-dYd" id="Q8S-fN-MOx"/>
+                        <outlet property="cityTextField" destination="JrA-gQ-LB8" id="hyg-6S-0si"/>
+                        <outlet property="countryTextField" destination="nxi-82-doa" id="6qP-Um-C7Z"/>
+                        <outlet property="descriptionTextField" destination="sJl-rP-wN2" id="U9H-nt-Qce"/>
+                        <outlet property="floorTextField" destination="7Oy-nm-pcc" id="fzR-QR-iBN"/>
+                        <outlet property="furnishedSwitch" destination="LwU-OS-THY" id="bK6-53-jVb"/>
+                        <outlet property="parkingTextField" destination="LPh-oi-kTq" id="w5A-wi-Hrw"/>
+                        <outlet property="priceTextField" destination="DH4-zp-fEZ" id="B47-wM-XWP"/>
+                        <outlet property="propertySizeTextField" destination="xuS-eU-8is" id="MVa-l9-TzN"/>
+                        <outlet property="propertyTYpeTextField" destination="AGe-ey-aih" id="QIB-Ub-gN5"/>
+                        <outlet property="referenceCodeTextField" destination="GXd-Yw-x9A" id="dNr-ss-70l"/>
+                        <outlet property="roomsTextField" destination="Aro-GW-5ZK" id="e8N-K1-1gF"/>
                         <outlet property="scrollView" destination="Dt1-Oj-UYA" id="gaw-0F-2pS"/>
+                        <outlet property="solarWetherHeatingSwitch" destination="NdA-zn-Ehn" id="8a5-Jl-GyF"/>
+                        <outlet property="storeRoomsSwitch" destination="Ael-ba-wOh" id="eUm-KN-FUj"/>
+                        <outlet property="titleDeedsSwitch" destination="Dt8-6D-iwR" id="0P4-w1-s9C"/>
+                        <outlet property="titleTextField" destination="6nX-Ww-Qcv" id="a3T-di-Wsy"/>
                         <outlet property="topView" destination="fub-ee-Aif" id="xxn-ZC-haG"/>
                     </connections>
                 </viewController>
@@ -980,6 +1047,7 @@
     </scenes>
     <resources>
         <image name="BedFilled" width="25" height="25"/>
+        <image name="Camera" width="25" height="25"/>
         <image name="CurrentLocation" width="127" height="152"/>
         <image name="Mixer" width="37" height="37"/>
         <image name="Parking" width="25" height="25"/>
@@ -991,6 +1059,7 @@
         <image name="illustration" width="320" height="321"/>
         <image name="mapPin" width="126" height="152"/>
         <image name="propertyPlaceholder" width="240" height="180"/>
+        <image name="save" width="25" height="25"/>
         <image name="sold" width="40" height="40"/>
         <image name="star" width="25" height="25"/>
         <image name="topAd" width="39" height="39"/>
